@@ -18,7 +18,7 @@
 1. Clone代码
 
 ```bash
-git clone https://github.com/bbigbear/WeCron.git
+git clone https://github.com/bbigbear/WeCron-project.git
 ```
 
 2. 安装依赖包
