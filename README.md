@@ -42,7 +42,7 @@ python WeCron-project/manage.py migrate
 4. 启动本地Server
 
 ```bash
-python WeCron/manage.py runserver
+python WeCron-project/manage.py runserver
 ```
 
 ### 扫码关注微定时公众号，体验一下吧
