@@ -1,9 +1,9 @@
-# WeCron
+# WeCron-project
 
-[![license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/polyrabbit/WeCron/blob/master/LICENSE)
-[![Build Status](https://github.com/polyrabbit/WeCron/actions/workflows/deploy.yml/badge.svg)](https://github.com/polyrabbit/WeCron/actions)
-[![codecov](https://codecov.io/gh/polyrabbit/WeCron/branch/master/graph/badge.svg)](https://codecov.io/gh/polyrabbit/WeCron)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/polyrabbit/WeCron/pulls)
+[![license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/bbigbear/WeCron-project/blob/master/LICENSE)
+[![Build Status](https://github.com/bbigbear/WeCron-project/actions/workflows/deploy.yml/badge.svg)](https://github.com/bbigbear/WeCron-project/actions)
+[![codecov](https://codecov.io/gh/bbigbear/WeCron/branch/master/graph/badge.svg)](https://codecov.io/gh/bbigbear/WeCron)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbigbear/WeCron-project/pulls)
 
 微信上的定时提醒 - Cron on WeChat
 
@@ -18,13 +18,13 @@
 1. Clone代码
 
 ```bash
-git clone https://github.com/polyrabbit/WeCron.git
+git clone https://github.com/bbigbear/WeCron.git
 ```
 
 2. 安装依赖包
 
 ```bash
-cd WeCron
+cd WeCron-project
 pip install -r requirements.txt
 ```
 
@@ -36,7 +36,7 @@ psql -c 'CREATE DATABASE "wecron" WITH OWNER "postgres" TEMPLATE template0 ENCOD
 psql -c 'GRANT ALL PRIVILEGES ON DATABASE "wecron" to "postgres";'
 
 # 建表
-python WeCron/manage.py migrate
+python WeCron-project/manage.py migrate
 ```
 
 4. 启动本地Server
@@ -51,9 +51,3 @@ python WeCron/manage.py runserver
   <img src="https://user-images.githubusercontent.com/2657334/117764620-64571d00-b25f-11eb-857a-d8c12932065f.png" alt="微定时二维码" data-canonical-src="https://mp.weixin.qq.com/misc/getqrcode?fakeid=3937213371&token=849973266" height="150">
 </a>
 </p>
-
-## 关于
-
-* 文档：[WeCron是怎样处理定时任务的](https://blog.betacat.io/post/how-wecron-schedules/)
-* 感谢[@messense](https://github.com/messense)贡献的微信公众平台SDK [wechatpy](http://docs.wechatpy.org)！
-* WeCron开始于2015年，一直稳定运行着，并将持续维护下去（因为我个人也是重度用户）
